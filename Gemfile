@@ -33,6 +33,9 @@ gem 'jbuilder', '~> 2.5'
 gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 
+gem 'just-datetime-picker'
+gem 'just-time-picker'
+
 gem 'devise'
 
 group :development, :test do

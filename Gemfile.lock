@@ -112,6 +112,12 @@ GEM
       thor (>= 0.14, < 2.0)
     jquery-ui-rails (5.0.5)
       railties (>= 3.2.16)
+    just-datetime-picker (0.0.7)
+      activeadmin (>= 0.4.4)
+      formtastic (>= 2.0.0)
+    just-time-picker (0.0.2)
+      activeadmin (>= 0.4.4)
+      formtastic (>= 2.0.0)
     kaminari (0.17.0)
       actionpack (>= 3.0.0)
       activesupport (>= 3.0.0)
@@ -226,6 +232,8 @@ DEPENDENCIES
   inherited_resources!
   jbuilder (~> 2.5)
   jquery-rails
+  just-datetime-picker
+  just-time-picker
   listen (~> 3.0.5)
   pg (~> 0.18)
   puma (~> 3.0)
