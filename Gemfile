@@ -36,9 +36,11 @@ gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'just-datetime-picker'
 gem 'just-time-picker'
 
-gem 'devise'
+gem 'active_skin'
 
 gem 'formtastic', '~> 3.0'
+
+gem 'devise'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
