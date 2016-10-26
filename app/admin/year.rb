@@ -3,7 +3,7 @@ ActiveAdmin.register Year do
 
   form do |f|
     f.inputs do
-      f.input :year, as: :datetime_picker
+      f.input :year, as: :date_picker
     end
 
     f.button
