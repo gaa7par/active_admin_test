@@ -1,3 +1,7 @@
 <h1>Active Admin Test</h1>
 <%= link_to 'Enter', articles_path %>
 <%= link_to 'Admin', admin_root_path %>
+
+<%= month_calendar do |date| %>
+  <%= date %>
+<% end %>
