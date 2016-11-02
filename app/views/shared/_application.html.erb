@@ -1,0 +1,20 @@
+<script>
+  $(document).ready(function() {
+    alert("<%= Article.first.text %>");
+    let dates = new Set();
+
+    $('#calendar').fullCalendar({
+      dayClick: function(date) {
+        if (dates.has(date.format())) {
+          dates.delete(date.format())
+          $(this).css('background-color', 'white');
+        }
+        else {
+          dates.add(date.format())
+          $(this).css('background-color', 'red');
+        }
+        // alert(Array.from(dates));
+      }
+    });
+  });
+</script>
