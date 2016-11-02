@@ -18,18 +18,19 @@
 //= require_tree .
 
 $(document).ready(function() {
+  let dates = new Set();
+
   $('#calendar').fullCalendar({
-    // weekNumbers: true,
-    // navLinks: true,
-
-    dayClick: function(date, jsEvent, view) {
-      // alert('Clicked on: ' + date.format());
-      // alert('Coordinates: ' + jsEvent.pageX + ',' + jsEvent.pageY);
-      // alert('Current view: ' + view.name);
-
-      $(this).css('background-color', 'red');
-    },
-
-    // navLinkWeekClick: function(weekStart, jsEvent) {}
+    dayClick: function(date) {
+      if (dates.has(date.format())) {
+        dates.delete(date.format())
+        $(this).css('background-color', 'white');
+      }
+      else {
+        dates.add(date.format())
+        $(this).css('background-color', 'red');
+      }
+      // alert(Array.from(dates));
+    }
   });
 });
